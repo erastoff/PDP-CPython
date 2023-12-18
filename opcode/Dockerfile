@@ -1,7 +1,5 @@
-# Используем образ Ubuntu 22.04
 FROM ubuntu:22.04
 
-# Обновляем пакеты и устанавливаем необходимые зависимости
 RUN apt-get update && \
     apt-get install -y \
     git \
@@ -13,7 +11,6 @@ RUN apt-get update && \
     python2.7 \
     python2.7-dev
 
-# Клонируем репозиторий CPython и собираем интерпретатор
 WORKDIR /opt
 RUN git clone https://github.com/python/cpython.git
 WORKDIR /opt/cpython
@@ -22,6 +19,5 @@ RUN ./configure --with-pydebug --prefix=/tmp/python
 RUN make -j2
 RUN make install
 
-# Запускаем интерпретатор Python
 # CMD ["/tmp/python/bin/python"]
 
