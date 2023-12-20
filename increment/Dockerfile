@@ -1,5 +1,5 @@
-#docker build -t python27-ubuntu:22.04 .
-#docker run -ti --rm python27-ubuntu:22.04
+#docker build -t python27-ubuntu:22.04_r1 .
+#docker run -ti --rm python27-ubuntu:22.04_r1
 
 FROM ubuntu:22.04
 
