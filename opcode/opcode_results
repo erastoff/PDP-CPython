@@ -1,0 +1,27 @@
+OPCODE RESULTS
+
+
+root@ea893b39c3c6:/opt/cpython# ./python
+Python 2.7.18 (tags/2.7-dirty:8d21aa21f2, Dec 18 2023, 17:13:51) 
+[GCC 11.4.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dis
+>>> def fib(n): return fib(n - 1) + fib(n - 2) if n > 1 else n
+... 
+>>> dis.dis(fib) 
+  1           0 LOAD_OTUS                1
+              3 COMPARE_OP               4 (>)
+              6 POP_JUMP_IF_FALSE       31
+              9 LOAD_GLOBAL              0 (fib)
+             12 LOAD_OTUS                1
+             15 BINARY_SUBTRACT     
+             16 CALL_FUNCTION            1
+             19 LOAD_GLOBAL              0 (fib)
+             22 LOAD_OTUS                2
+             25 BINARY_SUBTRACT     
+             26 CALL_FUNCTION            1
+             29 BINARY_ADD          
+             30 RETURN_VALUE        
+        >>   31 LOAD_FAST                0 (n)
+             34 RETURN_VALUE     
+
