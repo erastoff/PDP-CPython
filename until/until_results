@@ -1,0 +1,18 @@
+UNTIL RESULTS
+
+
+[root@0323f79c01d5 cpython]# python
+Python 2.7.5 (default, Oct 14 2020, 14:45:30) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-44)] on linux2
+Type "help", "copyright", "credits" or "license" for more information. 
+>>> num = 5
+>>> until num == 0:
+ ...	print(num)
+ ...	num -= 1
+ ...
+ 5
+ 4
+ 3
+ 2
+ 1
+ >>>

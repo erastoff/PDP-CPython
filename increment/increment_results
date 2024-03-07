@@ -1,0 +1,19 @@
+INCREMENT RESULTS
+
+
+[root@0df1a3623cd6 cpython]# python        
+Python 2.7.5 (default, Oct 14 2020, 14:45:30) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-44)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a = 1
+>>> a
+1
+>>> b = 2 
+>>> b
+2
+>>> a+b
+3
+>>> a++
+2
+>>> b--
+1
